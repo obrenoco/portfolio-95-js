@@ -1,0 +1,6 @@
+@import "./src/input.css";
+
+html,
+body {
+  margin: 0;
+}
