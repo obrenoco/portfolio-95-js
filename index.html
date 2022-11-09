@@ -6,10 +6,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
-    <title>BOILERPLATE</title>
+    <title>Breno Romeiro</title>
   </head>
-  <body class="bg-black">
-    <h1 class="text-4xl text-white font-bold underline">Hello World!!</h1>
+  <body class="h-screen bg-blue-windows">
+    <main
+      class="flex flex-col w-[100vw] h-[calc(100vh-54px)] z-10 py-0.5 bg-gray border-white border-2 text-black overflow-hidden"
+    >
+      <header class="flex justify-between px-2 py-1">
+        <div class="flex items-center gap-1">
+          <img src="./assets/icons/my-computer.png" alt="" />
+          <h2 class="text-gray-300 font-bold">My Portfolio</h2>
+        </div>
+        <ul class="list-none flex items-center gap-1">
+          <li class="flex">
+            <button>
+              <img src="./assets/icons/minimize-icon.png" alt="" />
+            </button>
+          </li>
+          <li class="flex">
+            <button>
+              <img alt="" src="./assets/icons/maximize-icon.png" />
+            </button>
+          </li>
+          <li class="flex">
+            <button>
+              <img alt="" src="./assets/icons/close-icon.png" />
+            </button>
+          </li>
+        </ul>
+      </header>
+      <div>
+        <ul class="flex">
+          <li
+            class="leading-none py-1 pt-2 px-4 hover:bg-blue-500 hover:text-white transition-colors"
+          >
+            <u>F</u>ile
+          </li>
+          <li
+            class="leading-none py-1 pt-2 px-4 hover:bg-blue-500 hover:text-white transition-colors"
+          >
+            <u>E</u>dit
+          </li>
+          <li
+            class="leading-none py-1 pt-2 px-4 hover:bg-blue-500 hover:text-white transition-colors"
+          >
+            For<u>m</u>at
+          </li>
+          <li
+            class="leading-none py-1 pt-2 px-4 hover:bg-blue-500 hover:text-white transition-colors"
+          >
+            <u>H</u>elp
+          </li>
+        </ul>
+      </div>
+
+      <section
+        class="flex flex-col gap-10 text-xl items-center bg-emerald-100 overflow-auto overflow-x-hidden h-full border-l-black border-t-black border-2 p-2"
+      >
+        <img
+          src="./assets/images/profile.png"
+          width="150"
+          alt="Breno Romeiro"
+          class="flex items-center rounded-full mt-10"
+        />
+        <div class="flex gap-2 items-center justify-center w-1/2">
+          <img
+            src="./assets/icons/orca.png"
+            alt=""
+            class="{`${orcaSize}"
+            -scale-x-[1]`}
+          />
+          <h1
+            class="flex flex-col items-center text-4xl font-bold tracking-wider"
+          >
+            <span>Breno</span>
+            <span>Romeiro</span>
+          </h1>
+          <img src="./assets/icons/orca.png" alt="" class="{orcaSize}" />
+        </div>
+        <div class="flex flex-col gap-4 px-4 w-full">
+          <p class="first-letter:text-6xl first-letter:font-">
+            Hi, I'm Breno! 👋
+            <br />
+            I'm a multilingual Front-end developer with{" "}
+            <b>{currentYear - startYear} years</b> of proven experience in
+            helping companies create and maintain amazing software.
+            <br />
+            <br />
+            I'm passionate about learning and developing with a desire to apply
+            skills on real world challenges.
+          </p>
+          <p class="py-2 font-bold">My current stack:</p>
+          <ul class="list-inside">
+            <li>🧡 HTML</li>
+            <li>💙 CSS</li>
+            <li>💛 Javascript | TypeScript</li>
+            <li>⚛️ React</li>
+            <li>🎨 Greensock/GSAP (animation)</li>
+            <li>🧪 Cypress.io</li>
+            <li>🌎 Browser API's</li>
+          </ul>
+          <p class="py-2 font-bold">Skills:</p>
+          <ul class="list-inside">
+            <li>📱Mobile First</li>
+            <li>🙋User Experience</li>
+            <li>🏃‍♀️Agile</li>
+          </ul>
+          bsromeiro@gmail.com 𝘽𝙧𝙚𝙣𝙤
+        </div>
+      </section>
+    </main>
+    <footer
+      class="flex justify-between items-center fixed bottom-0 bg-gray-light border-t-white border-2 w-full text-black p-1 h-[54px]"
+    >
+      <div
+        class="flex items-center w-full h-full gap-1 text-lg [&>*]:font-bold [&>*]:h-full [&>*]:flex [&>*]:items-center [&>*]:gap-2 [&>*]:border-solid [&>*]:border-2 [&>*]:border-t-white [&>*]:border-r-black [&>*]:border-b-black [&>*]:px-2"
+      >
+        <button class="" alt="Windows button" text="Start">
+          <img src="./assets/icons/windows-icon.png" alt="" />
+          <span>Start</span>
+        </button>
+        <button class="" alt="Folder window" text="Folder">
+          <img src="./assets/icons/my-computer.png" alt="" />
+          <span> Folder </span>
+        </button>
+      </div>
+      <div
+        class="flex items-center h-full bg-gray rounded-sm border-2 border-l-gray-dark border-t-gray-dark px-1 w-40 justify-center"
+      >
+        <img src="./assets/icons/sound.png" alt="" />
+        <span class="" id="clock"></span>
+      </div>
+    </footer>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>

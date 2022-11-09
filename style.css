@@ -1,6 +1,27 @@
 @import "./src/input.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: windowsRegular;
+  src: url("./assets/fonts/Windows-Regular.ttf");
+}
+
+* {
+  font-family: windowsRegular;
+  letter-spacing: 0.2ch;
+}
 
 html,
 body {
   margin: 0;
+}
+
+header {
+  background: linear-gradient(
+    90deg,
+    rgba(12, 28, 90, 1) 28%,
+    rgba(190, 204, 232, 1) 96%
+  );
 }
