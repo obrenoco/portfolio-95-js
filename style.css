@@ -11,6 +11,10 @@
   font-weight: 400;
 }
 
+main section {
+  color: white;
+}
+
 html,
 body {
   margin: 0;
@@ -41,4 +45,8 @@ header {
   border-right: solid 2px black;
   border-bottom: solid 2px gray;
   border-left: solid 2px black;
+}
+
+.flip-horizontal {
+  transform: scaleX(-1);
 }

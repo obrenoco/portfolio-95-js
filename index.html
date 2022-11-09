@@ -62,7 +62,7 @@
       </div>
 
       <div class="border-solid border-2 border-gray-dark m-0.5 rounded-sm">
-        <section
+        <div
           class="flex justify-between border-solid border-2 border-t-white [&>*]:px-2"
         >
           <div
@@ -72,25 +72,26 @@
               <!-- <div
                 class="flex [&>*]:h-full [&>*]:w-1 [&>*]:bg-gray [&>*]:border-solid [&>*]:border-1 [&>*]:border-r-gray"
               >
-                <div class=""></div>
+                <div class=""></div>p
                 <div class=""></div>
               </div> -->
               <p class="self-center">Address</p>
             </div>
             <div
-              class="bg-white w-full rounded-sm border-search px-2 flex items-center my-0.5"
+              class="bg-white w-full rounded-sm border-search px-2 flex items-center my-0.5 gap-2"
             >
+              <img src="./assets/icons/explorer.ico" alt="" />
               <p>C:\\WINDOWS\SYSTEM\BLANK.HTML</p>
             </div>
           </div>
-          <div class="self-center">
+          <!-- <div class="self-center">
             <p>Links</p>
-          </div>
-        </section>
+          </div> -->
+        </div>
       </div>
 
       <section
-        class="flex flex-col gap-10 text-xl items-center bg-emerald-100 overflow-auto overflow-x-hidden h-full border-l-black border-t-black border-2 p-2 m-1"
+        class="flex flex-col gap-10 text-xl items-center bg-blue-windows overflow-auto overflow-x-hidden h-full border-l-black border-t-black border-2 p-2 m-1"
       >
         <img
           src="./assets/images/profile.png"
@@ -102,8 +103,7 @@
           <img
             src="./assets/icons/orca.png"
             alt=""
-            class="min-w-[80px]"
-            -scale-x-[1]`}
+            class="min-w-[80px] flip-horizontal"
           />
           <h1
             class="flex flex-col items-center text-4xl font-bold tracking-wider"
@@ -117,9 +117,9 @@
           <p class="first-letter:text-6xl first-letter:font-">
             Hi, I'm Breno! 👋
             <br />
-            I'm a multilingual Front-end developer with{" "}
-            <b>{currentYear - startYear} years</b> of proven experience in
-            helping companies create and maintain amazing software.
+            I'm a multilingual Front-end developer with
+            <b id="years-working"></b> of proven experience in helping companies
+            create and maintain amazing software.
             <br />
             <br />
             I'm passionate about learning and developing with a desire to apply
@@ -141,7 +141,14 @@
             <li>🙋User Experience</li>
             <li>🏃‍♀️Agile</li>
           </ul>
-          bsromeiro@gmail.com 𝘽𝙧𝙚𝙣𝙤
+          <nav class="flex items-center justify-center gap-4">
+            <a href="mailto:bsromeiro@gmail.com">
+              <img src="./assets/icons/Fax.ico" alt="" width="70px" />
+            </a>
+            <a href="https://github.com/obrenoco" target="_blank">
+              <img src="./assets/icons/github.png" alt="" width="70px" />
+            </a>
+          </nav>
         </div>
       </section>
     </main>
