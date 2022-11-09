@@ -1,7 +1,4 @@
 @import "./src/input.css";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 @font-face {
   font-family: windowsRegular;
@@ -11,6 +8,7 @@
 * {
   font-family: windowsRegular;
   letter-spacing: 0.2ch;
+  font-weight: 400;
 }
 
 html,
@@ -24,4 +22,23 @@ header {
     rgba(12, 28, 90, 1) 28%,
     rgba(190, 204, 232, 1) 96%
   );
+}
+
+.border-btn {
+  border-top: solid 2px white;
+  border-right: solid 2px black;
+  border-bottom: solid 2px black;
+  border-left: solid 2px white;
+}
+
+.border-btn--clicked {
+  border-top: solid 2px black;
+  border-left: solid 2px black;
+}
+
+.border-search {
+  border-top: solid 2px black;
+  border-right: solid 2px black;
+  border-bottom: solid 2px gray;
+  border-left: solid 2px black;
 }

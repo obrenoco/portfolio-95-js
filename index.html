@@ -15,7 +15,7 @@
       <header class="flex justify-between px-2 py-1">
         <div class="flex items-center gap-1">
           <img src="./assets/icons/my-computer.png" alt="" />
-          <h2 class="text-gray-300 font-bold">My Portfolio</h2>
+          <h2 class="text-gray-300 font-bold">Portfolio</h2>
         </div>
         <ul class="list-none flex items-center gap-1">
           <li class="flex">
@@ -35,7 +35,7 @@
           </li>
         </ul>
       </header>
-      <div>
+      <div class="flex justify-between items-center">
         <ul class="flex">
           <li
             class="leading-none py-1 pt-2 px-4 hover:bg-blue-500 hover:text-white transition-colors"
@@ -58,10 +58,39 @@
             <u>H</u>elp
           </li>
         </ul>
+        <img src="./assets/icons/windows-icon.png" alt="" class="mr-3 mt-1" />
+      </div>
+
+      <div class="border-solid border-2 border-gray-dark m-0.5 rounded-sm">
+        <section
+          class="flex justify-between border-solid border-2 border-t-white [&>*]:px-2"
+        >
+          <div
+            class="flex gap-2 w-full border-solid border-2 border-r-gray-dark border-b-gray-dark border-t-transparent border-l-transparent"
+          >
+            <div class="flex gap-1">
+              <!-- <div
+                class="flex [&>*]:h-full [&>*]:w-1 [&>*]:bg-gray [&>*]:border-solid [&>*]:border-1 [&>*]:border-r-gray"
+              >
+                <div class=""></div>
+                <div class=""></div>
+              </div> -->
+              <p class="self-center">Address</p>
+            </div>
+            <div
+              class="bg-white w-full rounded-sm border-search px-2 flex items-center my-0.5"
+            >
+              <p>C:\\WINDOWS\SYSTEM\BLANK.HTML</p>
+            </div>
+          </div>
+          <div class="self-center">
+            <p>Links</p>
+          </div>
+        </section>
       </div>
 
       <section
-        class="flex flex-col gap-10 text-xl items-center bg-emerald-100 overflow-auto overflow-x-hidden h-full border-l-black border-t-black border-2 p-2"
+        class="flex flex-col gap-10 text-xl items-center bg-emerald-100 overflow-auto overflow-x-hidden h-full border-l-black border-t-black border-2 p-2 m-1"
       >
         <img
           src="./assets/images/profile.png"
@@ -73,7 +102,7 @@
           <img
             src="./assets/icons/orca.png"
             alt=""
-            class="{`${orcaSize}"
+            class="min-w-[80px]"
             -scale-x-[1]`}
           />
           <h1
@@ -82,7 +111,7 @@
             <span>Breno</span>
             <span>Romeiro</span>
           </h1>
-          <img src="./assets/icons/orca.png" alt="" class="{orcaSize}" />
+          <img src="./assets/icons/orca.png" alt="" class="min-w-[80px]" />
         </div>
         <div class="flex flex-col gap-4 px-4 w-full">
           <p class="first-letter:text-6xl first-letter:font-">
@@ -120,15 +149,19 @@
       class="flex justify-between items-center fixed bottom-0 bg-gray-light border-t-white border-2 w-full text-black p-1 h-[54px]"
     >
       <div
-        class="flex items-center w-full h-full gap-1 text-lg [&>*]:font-bold [&>*]:h-full [&>*]:flex [&>*]:items-center [&>*]:gap-2 [&>*]:border-solid [&>*]:border-2 [&>*]:border-t-white [&>*]:border-r-black [&>*]:border-b-black [&>*]:px-2"
+        class="flex items-center w-full h-full gap-1 text-lg [&>*]:font-bold [&>*]:h-full [&>*]:flex [&>*]:items-center [&>*]:gap-2 [&>*]:px-2"
       >
-        <button class="" alt="Windows button" text="Start">
+        <button class="border-btn" alt="Windows button" text="Start">
           <img src="./assets/icons/windows-icon.png" alt="" />
           <span>Start</span>
         </button>
-        <button class="" alt="Folder window" text="Folder">
+        <button
+          class="border-btn--clicked bg-gray-200"
+          alt="Folder window"
+          text="Folder"
+        >
           <img src="./assets/icons/my-computer.png" alt="" />
-          <span> Folder </span>
+          <span>Portfolio</span>
         </button>
       </div>
       <div
