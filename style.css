@@ -10,7 +10,13 @@ html {
 }
 
 body {
+  cursor: url("./assets/icons/cursor.png"), auto;
   height: 100dvh;
+}
+
+a,
+button {
+  cursor: url("./assets/icons/cursor-pointer.png"), pointer;
 }
 
 * {
