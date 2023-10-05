@@ -9,6 +9,10 @@ html {
   font-size: 18px;
 }
 
+body {
+  height: 100dvh;
+}
+
 * {
   font-family: windowsRegular;
   letter-spacing: 0.2ch;
